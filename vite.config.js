@@ -7,5 +7,5 @@ export default defineConfig({
   server:{
     host:true
   },
-  base: "/todo-react/"
+  base:"To-Do-List-React-"
 })
