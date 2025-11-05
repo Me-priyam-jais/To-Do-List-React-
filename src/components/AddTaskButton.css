@@ -1,0 +1,49 @@
+*
+{
+padding:0;
+margin:0;
+border:0;
+}
+
+#addTaskBtn
+{
+background-color:#F0E491;
+height:80%;
+width:95%;
+border:2px solid #31694E;
+border-radius:10px;
+display:flex;
+justify-content:space-evenly;
+align-items: center;
+}
+
+#addlabel
+{
+
+color:#658C58;
+font-size:medium;
+}
+
+#newTask
+{
+height:95%;
+text-align: center;
+background-color:#B0CE88;
+outline:none;
+border-radius:20px;
+}
+
+input:focus{
+border:2px solid #31694E;
+transition:all ;
+}
+
+#addbtn
+{
+height:90%;
+width:10%;
+border:2px solid #31694E ;
+background-color:#658C58;
+border-radius:20px;
+color:#B0CE88;
+}

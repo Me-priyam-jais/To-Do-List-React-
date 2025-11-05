@@ -1,0 +1,38 @@
+*
+{
+margin:0;
+padding:0;
+border:0;
+}
+
+.Task
+{
+display:flex;
+align-items:center;
+width:98%;
+height:2em;
+margin-top:5px;
+border-radius:10px;
+border:1px solid #658C58;
+background-color:#F0E491;
+}
+.taskStatusBtn
+{
+accent-color: green;
+justify-self: center;
+margin-left:0.8em;
+}
+.taskContent
+{
+margin-left:1em;
+font-weight: lighter;
+font-size: large;
+}
+.dltBtn
+{
+background-color:#31694E;
+width:4rem;
+height:1.5rem;
+border-radius:20px;
+margin-left:50%;
+}
