@@ -2,15 +2,15 @@
   "name": "packages",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://your-github-username.github.io/your-repo-name",
+  "homepage": "https://github.com/Me-Priyam-Jais/To-Do-List-React-.git",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.1.1",
