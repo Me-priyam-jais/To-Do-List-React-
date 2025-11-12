@@ -15,27 +15,17 @@ function handleAddTask(newtask)
       taskId:Date.now() + Math.random(),
       status:false //fasle=Not Completed  and true=Completed
     };
-    setTaskList([...taskList,newTaskObj]);
+    setTaskList(prev=>[...prev,newTaskObj]);
     }
 
 function handleDelete(taskToDltId)  
 {
-const upToDatetaskList=taskList.filter(task=>task.taskId!==taskToDltId);
-setTaskList(upToDatetaskList);
+setTaskList(prev=>prev.filter(task=>task.taskId!==taskToDltId));
 }
 
 function handleStatusChange(taskToUpdateId)
 {
-const upToDateTaskList=taskList.slice();
-for(let i=0;i<upToDateTaskList.length;i++)
-{
-if(upToDateTaskList[i].taskId===taskToUpdateId)
-{
-upToDateTaskList[i]={...upToDateTaskList[i],status:!upToDateTaskList[i].status}
-break;
-}
-}
-setTaskList(upToDateTaskList);
+setTaskList(prev=>prev.map(task=>task.taskId===taskToUpdateId ? {...task,status:!task.status} : task))
 }
 
   const completedTasks=taskList.filter(task=>task.status===true);
